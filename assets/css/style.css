@@ -132,7 +132,6 @@ button:hover {
 .btn-copiar {
         background-color: white;
         margin-top: 24px;
-        margin-left: 50px;
         color: #0a3871;
 }
 
@@ -157,7 +156,7 @@ button:hover {
     width: 50px;
     height: 50px;
     color: white;
-    margin: 20px auto;
+    margin: 0;
     border-radius: 50%;
     justify-content: center;
     align-items: center;
@@ -227,8 +226,11 @@ button:hover {
 @media screen and (max-width:768px) {
 
     .main-container {
+        max-width: 95%;
+        margin: 1rem;
         flex-direction: column;
         flex-wrap: wrap;
+        gap: 1rem;
     }
 
     .imagem-logo {
@@ -242,11 +244,23 @@ button:hover {
     }
 
     .caixa-1 {
+        margin: 0 0;
         width: 80%;
     }
 
     .caixa-2 {
+        margin: 0 0;
         width: 80%;
+    }
+
+    .input-texto {
+        border: none;
+        padding: 1rem;
+        margin: 1rem;
+    }
+
+    .botoes {
+        margin: 1rem 1rem;
     }
 
 }
@@ -264,8 +278,7 @@ button:hover {
     }
 
     .imagem-logo {
-
-        width: 170px;
+        width: 150px;
     }
 
     .social {
@@ -274,20 +287,41 @@ button:hover {
     }
 
     .main-container {
-        margin: 2.5rem auto;
-        width: 80%;
-        gap: 3rem;
-        margin-bottom: 4.5rem;
+        margin: 1rem 1rem;
+        width: 90%;
+        gap: 1rem;
+        margin-bottom: 1.7rem;
     }
 
     .caixa-1 {  
-        margin-top: 1rem;
-        width: 100%;
+        margin: 1rem;
+        width: 85%;
+        max-height: 25rem;
+    }
+
+    .input-texto {
+        border: none;
+        padding: 1rem;
+        margin: 1rem;
     }
 
     .caixa-2 {
         margin-top: 1rem;
-        width: 100%;
+        margin-bottom: .5rem;
+        width: 85%;
+        max-height: 21rem;
+    }
+
+    .mensagens-erro {
+        font-size: .5rem;
+    }
+
+    .mensagens-erro li::before {
+        font-size: .5rem;
+    }
+
+    .botoes {
+        margin: 1rem 1rem;
     }
 
     .btn-criptografar {
@@ -301,7 +335,16 @@ button:hover {
     }
 
     .btn-copiar {
-        width: 8rem;
+        width: 10rem;
         font-size: 1rem;
     }
+
+    .social {
+        height: 80px;
+    }
+
+.resultado:placeholder-shown {
+        background-image: url(../images/resultado-bg_425.png);
+}
+
 }
