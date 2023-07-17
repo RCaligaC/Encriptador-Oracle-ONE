@@ -1,0 +1,307 @@
+body{
+    background-color: #e7e7e7;
+    font-family: Montserrat sans-serif;
+}
+
+.cabecalho {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 5px 5px rgba(58, 173, 240, 0.2);
+    background: #FFF;
+}
+
+.imagem-logo {
+    padding: 15px 15px;
+    width: 400px;
+}
+
+.titulo{
+    font-size: 2em;
+    font-weight: bold;
+    color: #0077b6;
+    font-family: Helvetica, sans-serif;
+}
+
+/* css do main */
+
+.main-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 22rem;
+    margin-bottom: 8.5rem;
+}
+
+.caixa-1 {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.caixa-2 {
+    margin-top: 4.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+textarea {
+        outline: none;
+}
+
+.input-texto {
+        margin-top: 85px;
+        margin-left: 15px;
+        background-color: transparent;
+        border-color: transparent;
+        border-radius: 30px;
+        padding: 2rem;
+        font-size: 20px;
+}
+
+.mensagens-erro li::before {
+        content: url(../images/exclamation.png);
+        /* vertical-align: middle; */
+}
+    
+.mensagens-erro li {
+        font-size: 20px;
+        margin-left: 25px;
+}
+
+.botoes {
+        display: flex;
+        flex-direction: row;
+        margin-top: 57px;
+        margin-left: 15px;
+}
+
+button {
+        width: 325px;
+        height: 60px;
+        border: 1px solid #0a3871;
+        border-radius: 25px;
+        font-size: 25px;
+        cursor: pointer;
+        box-shadow: 3px 5px 12px #356ea9;
+        transition: 1s all;
+}
+
+button:hover {
+        transition: 0.5s;
+        transform: scale(1.1);
+        opacity: 80%;
+}
+
+.btn-criptografar {
+        background-color: #0077b6;
+        color: white;
+}
+
+.btn-descriptografar {
+        margin-left: 30px;
+        background-color: #d8dfe8;
+        color: #0077b6;
+}
+
+.resultado {
+        position: relative;
+        border-color: transparent;
+        border-radius: 30px;
+        padding: 1rem;
+        font-size: 20px;
+}
+
+.resultado:placeholder-shown {
+        background-image: url(../images/resultado-bg.png);
+        background-position: top;
+        background-repeat: no-repeat;
+}
+
+.resultado:not(:placeholder-shown) {
+        background-color: white;
+}
+    
+.invisivel {
+        display: none;
+}
+    
+.btn-copiar {
+        background-color: white;
+        margin-top: 24px;
+        margin-left: 50px;
+        color: #0a3871;
+}
+
+
+/* termina css do main */
+
+.social{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #0077b6;
+    color: #FFF;
+    width: 100%;
+    height: 100px;    
+    text-align: center;
+    line-height: 80px;
+}
+    
+.social-paragrafo{
+    display: flex;
+    width: 50px;
+    height: 50px;
+    color: white;
+    margin: 20px auto;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+    font-size: 20px;
+    margin: 15px 0 0 10px ;
+}
+
+.imagem{
+    transition: 0.5s all;
+}
+
+.imagem:hover {
+    transform: scale(1.6) rotate(25deg);
+}
+
+
+@media screen and (max-width:1440px){
+
+    .main-container {
+        width: 90%;
+        gap: 7rem;
+        margin-bottom: 2rem;
+    }
+
+    .caixa-1 {  
+        margin-top: 1rem;
+        width: 40%;
+    }
+
+    .caixa-2 {
+        margin-top: 1rem;
+        width: 40%;
+    }
+
+    .social {
+        padding: 0;
+    }
+}
+
+/* tablete */
+  
+@media screen and (max-width:1024px){
+    .main-container {
+        width: 100%;
+        gap: 3rem;
+        margin-bottom: 4.5rem;
+    }
+
+    .caixa-1 {  
+        margin-top: 1rem;
+        width: 40%;
+    }
+
+    .caixa-2 {
+        margin-top: 1rem;
+        width: 40%;
+    }
+
+    .social {
+        padding: 0;
+    }
+}
+  
+/* laptop */
+  
+@media screen and (max-width:768px) {
+
+    .main-container {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .imagem-logo {
+
+        /* padding: 15px 15px; */
+        width: 280px;
+    }
+
+    .titulo {
+        font-size: 1.5rem;
+    }
+
+    .caixa-1 {
+        width: 80%;
+    }
+
+    .caixa-2 {
+        width: 80%;
+    }
+
+}
+  
+/* desktop */
+  
+@media screen and (max-width:425px) {
+
+    .cabecalho {
+        width: 100%;
+    }
+
+    .titulo {
+        font-size: 1rem;
+    }
+
+    .imagem-logo {
+
+        width: 170px;
+    }
+
+    .social {
+        width: 100%;
+        height: 80px;
+    }
+
+    .main-container {
+        margin: 2.5rem auto;
+        width: 80%;
+        gap: 3rem;
+        margin-bottom: 4.5rem;
+    }
+
+    .caixa-1 {  
+        margin-top: 1rem;
+        width: 100%;
+    }
+
+    .caixa-2 {
+        margin-top: 1rem;
+        width: 100%;
+    }
+
+    .btn-criptografar {
+        width: 8rem;
+        font-size: 1rem;
+    }
+
+    .btn-descriptografar {
+        width: 8rem;
+        font-size: 1rem;
+    }
+
+    .btn-copiar {
+        width: 8rem;
+        font-size: 1rem;
+    }
+}
